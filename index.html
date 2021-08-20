@@ -1,0 +1,110 @@
+<!-- 
+      HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change a single TD background color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over it
+        49) Write a function to add a table with 4 rows and 3 columns programmatically
+        50) Write a function to remove the table from the page
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BenchMark M1-D10</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="heading"> This is the heading of the page.</h1>
+    <ol>
+      <li>Mango</li>
+      <li>Strawberry</li>
+      <li>Orange</li>
+    </ol>
+    <table id="table">
+      <tr>
+        <td colspan="2">row_1/column_1</td>
+        <td>column_2</td>
+        <td>
+          <a
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBT6hZ_mQusQ4MfB12MujYumJqEwjY4TdbLcu8mbfkpJJXyf-U85KRTVZpZPOkoqUbDk&usqp=CAU"
+            >Rose Image</a
+          >
+        </td>
+        <td>column_4</td>
+        <td>column_5</td>
+      </tr>
+      <tr>
+        <td>row_2/column_1</td>
+        <td>column_2</td>
+        <td>
+          <a
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBT6hZ_mQusQ4MfB12MujYumJqEwjY4TdbLcu8mbfkpJJXyf-U85KRTVZpZPOkoqUbDk&usqp=CAU"
+            >Rose Image</a
+          >
+        </td>
+        <td>column_4</td>
+        <td>column_5</td>
+      </tr>
+      <tr>
+        <td colspan="2">row_3/column_1</td>
+        <td>column_2</td>
+        <td>
+          <a
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBT6hZ_mQusQ4MfB12MujYumJqEwjY4TdbLcu8mbfkpJJXyf-U85KRTVZpZPOkoqUbDk&usqp=CAU"
+            >Rose Image</a
+          >
+        </td>
+        <td>column_4</td>
+        <td>column_5</td>
+      </tr>
+      <tr>
+        <td>row_4/column_1</td>
+        <td>column_3</td>
+        <td>
+          <a
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuBT6hZ_mQusQ4MfB12MujYumJqEwjY4TdbLcu8mbfkpJJXyf-U85KRTVZpZPOkoqUbDk&usqp=CAU"
+            >Rose Image</a
+          >
+        </td>
+        <td>column_4</td>
+        <td>column_5</td>
+      </tr>
+    </table>
+    <hr />
+    <div class="nestedP">
+      <p id="container"><p>Nested paragraph.</p>
+      <p class="changefont">A second nested paragraph.</p></p>
+      <ul id="list">
+        <li>This is number 1 <ul><li>child 1</li></ul>
+        <li>This is number 2 <ul><li>child 1</li></ul>
+        </li>
+        <ul>
+      </ul>
+    </div>
+  </body>
+  <footer>Created by Mansi</footer>
+
+  <script src="index.js"></script>
+</html>
